@@ -1,4 +1,9 @@
 package main.java.rpg.dao;
 
-public class DAO {
+import java.util.List;
+
+public interface DAO<T> {
+    void save(T item);
+    T findByName(String name);
+    List<T> findAll();
 }

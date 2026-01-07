@@ -2,8 +2,8 @@ package main.java.rpg.decorator;
 
 import main.java.rpg.core.ImprovedCharacter;
 
-public class FireResistance extends CharacterDecorator {
-    public FireResistance(ImprovedCharacter improvedCharacter) {
+public class Telepathy extends CharacterDecorator {
+    public Telepathy(ImprovedCharacter improvedCharacter) {
         super(improvedCharacter);
     }
 
@@ -14,6 +14,6 @@ public class FireResistance extends CharacterDecorator {
 
     @Override
     public String getDescription() {
-        return super.getDescription() + "; Ce personnage résiste au feu";
+        return super.getDescription() + "; Ce personnage a des pouvoirs télépathiques";
     }
 }
